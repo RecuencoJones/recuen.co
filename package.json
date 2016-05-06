@@ -1,0 +1,35 @@
+{
+  "name": "recuen.co",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "description": "Personal web page",
+  "author": "RecuencoJones",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RecuencoJones/recuen.co"
+  },
+  "dependencies": {
+    "angular": "1.4.5",
+    "angular-ui-router": "0.2.18",
+    "bootstrap": "3.1.1",
+    "font-awesome": "4.6.1",
+    "jquery": "2.1.4",
+    "lodash": "4.11.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-sass": "2.1.0",
+    "gulp-clean": "0.3.1",
+    "gulp-concat": "2.6.0",
+    "gulp-html2js": "0.2.0",
+    "gulp-uglify": "1.2.0",
+    "gulp-rename": "1.2.2",
+    "require-dir": "0.3.0",
+    "run-sequence": "1.1.2"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  }
+}

@@ -1,0 +1,31 @@
+var gulp = require('gulp'),
+  runSequence = require('run-sequence').use(gulp);
+
+/**
+ * Build task.
+ */
+gulp.task('build:js', function(done) {
+  runSequence(
+    ['copy:js'],
+    ['html2js'],
+    ['concat:js'],
+    ['uglify'],
+    done
+  );
+});
+
+gulp.task('build:css', function(done) {
+  runSequence(
+    ['sass'],
+    ['concat:css'],
+    done
+  );
+});
+
+gulp.task('build', function(done) {
+  runSequence(
+    ['clean:tmp', 'clean:dist'],
+    ['build:js', 'build:css'],
+    done
+  );
+});
