@@ -1,13 +1,14 @@
 var gulp = require('gulp'),
-  sass = require('gulp-sass');
+  sass = require('gulp-sass'),
+  config = require('../config/build.conf');
 
 /**
- * Tasks to manage CSS files.
+ * Tasks to preprocess sass files.
  */
 gulp.task('sass', function() {
   return gulp.src([
-    'app/styles/styles.scss'
+    config.source.app + '/styles/styles.scss'
   ])
-  .pipe(sass.sync().on('error', sass.logError))
-  .pipe(gulp.dest('tmp/styles'));
+  .pipe(sass())
+  .pipe(gulp.dest(config.source.tmp + '/styles'));
 });

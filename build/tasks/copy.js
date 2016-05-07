@@ -1,15 +1,15 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+  config = require('../config/build.conf');
 
 /**
  * Copy files to temporary directory.
  */
 gulp.task('copy:js', function() {
   return gulp.src([
-    'app/**/*.js'
+    config.source.app + '/**/*.js'
   ])
-  .pipe(gulp.dest('tmp'));
+  .pipe(gulp.dest(config.source.tmp));
 });
 
 gulp.task('copy', [
-  'copy:js'
-]);
+  'copy:js']);

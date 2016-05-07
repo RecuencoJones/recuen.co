@@ -8,5 +8,5 @@ requireDir('build/tasks', {
 
 // Register default build.
 gulp.task('default', function() {
-  runSequence(['build'], ['concurrent']);
+  runSequence(['lint'], ['build'], ['concurrent']);
 });

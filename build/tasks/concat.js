@@ -1,24 +1,27 @@
 var gulp = require('gulp'),
-  concat = require('gulp-concat');
+  concat = require('gulp-concat'),
+  config = require('../config/build.conf');
 
 /**
  * Concat task for built JS files.
  */
 gulp.task('concat:js', function() {
   return gulp.src([
-    'tmp/app.js',
-    'tmp/**/*.js'
+    config.source.tmp + '/**/*.js'
   ])
-  .pipe(concat('app.js'))
-  .pipe(gulp.dest('dist/'));
+  .pipe(concat(config.pkg.name + '.js'))
+  .pipe(gulp.dest(config.source.tmp + '/'));
 });
 
+/**
+ * Concat task for built CSS files.
+ */
 gulp.task('concat:css', function() {
   return gulp.src([
-    'tmp/**/*.css'
+    config.source.tmp + '/**/*.css'
   ])
-  .pipe(concat('app.css'))
-  .pipe(gulp.dest('dist/'));
+  .pipe(concat(config.pkg.name + '.css'))
+  .pipe(gulp.dest(config.source.tmp + '/'));
 });
 
 gulp.task('concat', ['concat:js', 'concat:css']);

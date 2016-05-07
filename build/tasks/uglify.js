@@ -1,12 +1,13 @@
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  config = require('../config/build.conf');
 
 /**
  * Uglify task for dist JS files.
  */
 gulp.task('uglify', function() {
-  return gulp.src(['dist/app.js'])
+  return gulp.src([config.source.dist + '/' + config.pkg.name + '.js'])
     .pipe(uglify({
       outSourceMap: true,
       preserveComments: 'some'
@@ -14,5 +15,5 @@ gulp.task('uglify', function() {
     .pipe(rename({
       extname: '.min.js'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(config.source.dist));
 });

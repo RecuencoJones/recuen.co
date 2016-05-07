@@ -9,6 +9,7 @@ gulp.task('build:js', function(done) {
     ['copy:js'],
     ['html2js'],
     ['concat:js'],
+    ['wrap:js'],
     ['uglify'],
     done
   );
@@ -18,6 +19,7 @@ gulp.task('build:css', function(done) {
   runSequence(
     ['sass'],
     ['concat:css'],
+    ['wrap:css'],
     done
   );
 });

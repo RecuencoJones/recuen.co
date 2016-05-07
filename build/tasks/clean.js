@@ -1,11 +1,12 @@
 var gulp = require('gulp'),
-  clean = require('gulp-clean');
+  clean = require('gulp-clean'),
+  config = require('../config/build.conf');
 
 /**
  * Clean task for temporary folder.
  */
 gulp.task('clean:tmp', function() {
-  return gulp.src('tmp', {read: false})
+  return gulp.src(config.source.tmp, {read: false})
     .pipe(clean({force: true}));
 });
 
@@ -13,11 +14,32 @@ gulp.task('clean:tmp', function() {
  * Clean task for distribution folder.
  */
 gulp.task('clean:dist', function() {
-  return gulp.src('dist', {read: false})
+  return gulp.src(config.source.dist, {read: false})
+    .pipe(clean({force: true}));
+});
+
+/**
+ * Clean task for documentation folder.
+ */
+gulp.task('clean:doc', function() {
+  return gulp.src(config.source.doc, {read: false})
+    .pipe(clean({force: true}));
+});
+
+/**
+ * Clean task for test results.
+ */
+gulp.task('clean:test', function() {
+  return gulp.src(config.source.test + '/results', {read: false})
     .pipe(clean({force: true}));
 });
 
 /**
  * General clean task.
  */
-gulp.task('clean', ['clean:tmp', 'clean:dist']);
+gulp.task('clean', [
+  'clean:tmp',
+  'clean:dist',
+  'clean:doc',
+  'clean:test'
+]);
