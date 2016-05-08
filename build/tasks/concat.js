@@ -7,6 +7,8 @@ var gulp = require('gulp'),
  */
 gulp.task('concat:js', function() {
   return gulp.src([
+    '!' + config.source.tmp + '/' + config.pkg.name + '.js',
+    config.source.tmp + '/app.js',
     config.source.tmp + '/**/*.js'
   ])
   .pipe(concat(config.pkg.name + '.js'))
@@ -18,6 +20,7 @@ gulp.task('concat:js', function() {
  */
 gulp.task('concat:css', function() {
   return gulp.src([
+    '!' + config.source.tmp + '/' + config.pkg.name + '.css',
     config.source.tmp + '/**/*.css'
   ])
   .pipe(concat(config.pkg.name + '.css'))

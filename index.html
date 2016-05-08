@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recuen.co</title>
 
+    <link rel="icon" href="dist/assets/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="dist/recuen.co.css">
 
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
   </head>
-  <body data-ng-app="recuen.co">
+  <body class="app"
+      data-ng-app="recuen.co">
+    <div data-navbar></div>
     <div data-ui-view></div>
 
-    <script src="dist/app.js"></script>
+    <script src="dist/recuen.co.js"></script>
   </body>
 </html>

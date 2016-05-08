@@ -11,5 +11,14 @@ gulp.task('copy:js', function() {
   .pipe(gulp.dest(config.source.tmp));
 });
 
+gulp.task('copy:assets', function() {
+  return gulp.src([
+    config.source.app + '/assets/**/*'
+  ])
+  .pipe(gulp.dest(config.source.dist + '/assets'));
+});
+
 gulp.task('copy', [
-  'copy:js']);
+  'copy:js',
+  'copy:assets'
+]);

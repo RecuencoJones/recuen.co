@@ -18,6 +18,7 @@ gulp.task('build:js', function(done) {
 gulp.task('build:css', function(done) {
   runSequence(
     ['sass'],
+    ['copy:assets'],
     ['concat:css'],
     ['wrap:css'],
     done
