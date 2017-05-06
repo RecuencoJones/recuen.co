@@ -1,0 +1,8 @@
+@import "vars";
+
+.mbr-cards-col {
+  @media (min-width: $lg-width-break) {
+    display: inline-block;
+    float: left;
+  }
+}

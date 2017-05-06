@@ -1,43 +1,54 @@
 {
   "name": "recuen.co",
-  "version": "0.0.0",
-  "description": "Personal web page",
-  "license": "UNLICENSED",
-  "author": "RecuencoJones",
-  "main": "dist/recuen.co.js",
+  "version": "2.0.0",
+  "description": "David Recuenco personal site",
+  "author": {
+    "name": "David Recuenco",
+    "url": "https://github.com/RecuencoJones"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/RecuencoJones/recuen.co"
   },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
   "dependencies": {
-    "angular": "1.4.5",
-    "angular-ui-router": "0.2.18",
-    "bootstrap": "3.1.1",
-    "font-awesome": "4.6.1",
-    "jquery": "2.1.4",
-    "lodash": "4.11.1"
+    "animate.css": "3.5.1",
+    "bootstrap": "4.0.0-alpha.2",
+    "et-line": "1.0.1",
+    "jarallax": "1.7.1",
+    "jquery": "1.11.2",
+    "jquery-plugin-viewport-checker": "1.8.3",
+    "jquery-touchswipe": "1.6.15",
+    "lodash": "4.17.4",
+    "smoothscroll-for-websites": "1.4.6",
+    "socicon": "3.0.5",
+    "tether": "1.4.0",
+    "vue": "2.2.1"
   },
   "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-sass": "2.1.0",
-    "gulp-clean": "0.3.1",
-    "gulp-concat": "2.6.0",
-    "gulp-html2js": "0.2.0",
-    "gulp-wrap": "0.11.0",
-    "gulp-uglify": "1.2.0",
-    "gulp-rename": "1.2.2",
-    "gulp-eslint": "2.0.0",
-    "gulp-jsdoc3": "0.2.0",
-    "require-dir": "0.3.0",
-    "run-sequence": "1.1.2",
-    "ink-docstrap": "1.1.4"
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "style-loader": "0.16.1",
+    "url-loader": "0.5.8",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
   },
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "clean": "gulp clean",
-    "doc": "gulp doc",
-    "lint": "gulp lint",
-    "all": "gulp clean lint doc build"
-  }
+  "keywords": [
+    "personal-page",
+    "mobirise"
+  ]
 }

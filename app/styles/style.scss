@@ -1,0 +1,17 @@
+body {
+  position: relative;
+}
+
+button, a {
+  color: #ffffff;
+
+  &:focus, &:active {
+    outline: none !important;
+    color: #ffffff !important;
+  }
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
