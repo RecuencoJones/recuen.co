@@ -1,0 +1,26 @@
+@import "vars";
+
+#social-links {
+  background-color: $main-dark;
+
+  .btn-social {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .footer-logo {
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+
+    @media (max-width: $sm-width-break) {
+      width: 60%;
+    }
+
+    @media (min-width: $sm-width-break) {
+      display: block;
+    }
+  }
+}
+

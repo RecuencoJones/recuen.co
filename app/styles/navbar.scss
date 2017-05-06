@@ -1,65 +1,9 @@
-@import 'variables';
-@import 'colors';
-@import 'mixins';
+@import "vars";
 
-.navbar {
-  color: $white;
-  background: $dark-gray;
-  height: $navbar-height;
-  display: flex;
-  position: relative;
-  line-height: $navbar-height - 2 * $padding-large;
-  vertical-align: middle;
-  overflow: hidden;
-  cursor: default;
-
-  @include box-shadow(0, 1px);
-  @include unselect();
-
-  .header {
-    padding: $padding-large;
-    font-size: $font-size-big;
-  }
-
-  .sections {
-    display: flex;
-    position: fixed;
-    right: 0;
-
-    .section {
-      color: $gray;
-      background: $darker-gray;
-      padding: $padding-large;
-      margin-left: $margin;
-
-      &:hover, &.active {
-        color: $white;
-        background: $green;
-        transition: all 0.15s ease-in-out;
-        transform: scale(1.05);
-        cursor: pointer;
-
-        @include box-shadow(1px, 1px);
-      }
-    }
-  }
+#ext_menu-0 .nav-link.active {
+  color: $main;
 }
 
-@media screen and (max-width: $responsive-width) {
-
-.navbar {
-  display: block;
-  height: $navbar-height * 2;
-  text-align: center;
-
-  .sections {
-    width: 100%;
-
-    .section {
-      width: 20%;
-      margin: 0;
-    }
-  }
-}
-
+section {
+  padding: 0;
 }

@@ -1,0 +1,11 @@
+@import "vars";
+
+.card-img-top {
+  @media (min-width: $lg-width-break) {
+    max-height: 15vw;
+  }
+
+  @media (max-width: $lg-width-break) {
+    max-height: 56vw;
+  }
+}
