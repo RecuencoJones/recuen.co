@@ -1,6 +1,6 @@
 <template>
   <section class="mbr-section mbr-section-hero mbr-section-full header2 mbr-parallax-background mbr-after-navbar"
-           id="introduction" style="background-image: url(static/images/background.jpg);">
+           id="introduction" style="background-image: url(images/background.jpg);">
 
     <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);">
     </div>
@@ -19,7 +19,7 @@
               </div>
               <div class="mbr-table-cell mbr-valign-top mbr-left-padding-md-up col-md-7 image-size"
                    style="width: 36%;">
-                <div class="mbr-figure"><img src="static/images/me.jpg" class="img-circle"></div>
+                <div class="mbr-figure"><img src="images/me.jpg" class="img-circle"></div>
               </div>
             </div>
           </div>

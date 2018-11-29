@@ -22,7 +22,7 @@ export default {
   props: ['title', 'subtitle', 'description', 'image', 'url'],
   computed: {
     imgSrc() {
-      return this.image ? this.image : 'static/images/package.png'
+      return this.image ? this.image : 'images/package.png'
     },
     urlHref() {
       return this.url ? this.url : '#'

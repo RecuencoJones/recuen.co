@@ -22,7 +22,7 @@
       <div class="row">
         <div class="mbr-table-md-up">
           <div class="mbr-table-cell mbr-valign-top col-md-12 footer-logo">
-            <div class="mbr-figure"><img src="static/images/logo.png"></div>
+            <div class="mbr-figure"><img src="images/logo.png"></div>
           </div>
         </div>
       </div>

@@ -36,12 +36,12 @@ export const portfolio = [
     subtitle: 'Not Microsoft Music',
     description: 'Application to carry and play your music library everywhere',
     url: 'https://github.com/PistachoSoft/NMM-frontend',
-    image: 'static/images/nmm.png'
+    image: 'images/nmm.png'
   }, {
     title: 'EarthMe',
     subtitle: 'SpaceApps 2014',
     description: 'Transform your best pictures into a collage of images from our beloved Earth!',
     url: 'https://github.com/PistachoSoft/earthme',
-    image: 'static/images/earthme.png'
+    image: 'images/earthme.png'
   }
 ]

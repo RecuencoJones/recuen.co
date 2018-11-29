@@ -1,13 +1,16 @@
-const path = require('path'),
-  webpack = require('webpack'),
-  pkg = require('./package.json')
+const { resolve } = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: './app/index.js',
+  entry: {
+    app: './src/index.js',
+    vendor: './src/vendor.js'
+  },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: `${pkg.name}.js`
+    path: resolve(__dirname, './dist'),
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -65,11 +68,26 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#inline-source-map'
+  devtool: '#inline-source-map',
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity }),
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jquery': 'jquery',
+      'window.jQuery': 'jquery',
+      'jQuery': 'jquery',
+      'Tether': 'tether',
+      'window.Tether': 'tether',
+    }),
+    new HtmlWebpackPlugin({ template: './index.html' }),
+    new CopyWebpackPlugin([
+      'assets'
+    ])
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+  module.exports.devtool = false
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
@@ -78,7 +96,6 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
       compress: {
         warnings: false
       }

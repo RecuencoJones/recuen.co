@@ -5,7 +5,7 @@
         <div class="mbr-table">
           <div class="mbr-table-cell">
             <div class="navbar-brand">
-              <a href="#top" class="navbar-logo"><img src="static/images/logo.png" alt="RecuencoJones"></a>
+              <a href="#top" class="navbar-logo"><img src="images/logo.png" alt="RecuencoJones"></a>
               <a class="navbar-caption" href="#top">David Recuenco</a>
             </div>
           </div>

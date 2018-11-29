@@ -1,0 +1,26 @@
+@import '../../static/web/assets/mobirise-icons/mobirise-icons.css';
+@import '~et-line/style.css';
+@import '~tether/dist/css/tether.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~animate.css/animate.min.css';
+@import '../../static/dropdown/css/style.css';
+@import '../../static/theme/css/style.css';
+@import '../../static/mobirise/css/mbr-additional.css';
+
+body {
+  position: relative;
+}
+
+button, a {
+  color: #ffffff;
+
+  &:focus, &:active {
+    outline: none !important;
+    color: #ffffff !important;
+  }
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
