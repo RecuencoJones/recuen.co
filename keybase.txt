@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/recuencojones
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://recuen.co
+  * I am recuencojones (https://keybase.io/recuencojones) on keybase.
+  * I have a public key ASBbdfEKELoPXUZpH9CAbiDEUjEHTRMSfIO_la6Uofzj-go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f062053fb638b0745783b5a4f8e144d92db5ba9f453f88294d1451b29adbcfdc0a",
+      "host": "keybase.io",
+      "kid": "01205b75f10a10ba0f5d46691fd0806e20c45231074d13127c83bf95ae94a1fce3fa0a",
+      "uid": "6a1017897b1ec8717b208d141fc10d19",
+      "username": "recuencojones"
+    },
+    "merkle_root": {
+      "ctime": 1549463301,
+      "hash": "f03bfa3529abda775d0ac80fe26e2720c8737a90d469b3af04a28799c88ba2a054428f1736b9ce437b2f47ea2d9dcdf332a5b5ef86f1fb3a9147ea8b34c82f74",
+      "hash_meta": "f70dd02d14c1c776e82093302f439eb89fd477739ec3020979f3551af63bd471",
+      "seqno": 4712218
+    },
+    "service": {
+      "entropy": "B5gOSd7OoFSxbbzea0oDokqh",
+      "hostname": "recuen.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.2"
+  },
+  "ctime": 1549463312,
+  "expire_in": 504576000,
+  "prev": "1d0c141eb98b39d15b93a646bdf02d053afe48f6ef8733e6795bb4511c51c0ed",
+  "seqno": 46,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgW3XxChC6D11GaR/QgG4gxFIxB00TEnyDv5WulKH84/oKp3BheWxvYWTESpcCLsQgHQwUHrmLOdFbk6ZGvfAtBTr+SPbvhzPmeVu0URxRwO3EIGBXQXsvsT2YPp1+iBkStHYmhbU92kqksxUUkoBdLm8DAgHCo3NpZ8RAj+Qjiw7YJQmbbe5xHjrxsYVzEzMeh8Ias/7ElKiy/Ey9UvOXJijxe3/645g7+oxaBzVavNuiMvvhtai+bHxDBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAkdZ5NPZ4Xjd8LKZtN9NUIvig75ctinsQXH94im0J+4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/recuencojones
+
+==================================================================
